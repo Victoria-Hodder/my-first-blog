@@ -1,5 +1,9 @@
 body{
     background-color: lightgoldenrodyellow;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .page-header {
@@ -19,7 +23,7 @@ body{
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'BioRhyme', serif;
 }
 
 .header {
