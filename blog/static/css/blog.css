@@ -22,6 +22,14 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
+.header {
+    text-align: center;
+}
+
+.white-text {
+    color: white;
+}
+
 .date {
     color: #828282;
 }
