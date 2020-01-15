@@ -1,11 +1,16 @@
 {% load static %}
 <html>
     <head>
-        <title>Victoria Hodder</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=BioRhyme|Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        {% if title %}
+            <title>Victoria Hodder - {{ title }}</title>
+        {% else %}
+            <title>Victoria Hodder</title>
+        {% endif %}
+</head>
     </head>
     <body>
         <div class="page-header text-center">
@@ -18,6 +23,13 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
                 {% block content %}
                 {% endblock %}
                 </div>
