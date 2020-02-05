@@ -16,6 +16,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
 application = get_wsgi_application()
 
-project_folder = os.path.expanduser('~/vrhodder')
+project_folder = os.path.expanduser('~/vrhodder.pythonanywhere.com')
 
 load_dotenv(os.path.join(project_folder, '.env'))
